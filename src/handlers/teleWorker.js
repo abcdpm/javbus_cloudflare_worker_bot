@@ -21,7 +21,7 @@ export default async request => {
 
     const bot = new Telegram('1747449645:AAGtjHNLrjySoYS8K8JyiJMVJSkylbhOiLg', MESSAGE)
 
-    const help_text = "命令格式: /av IPX-641\n\nBy @永日之父\n由 Cloudflare Worker 强力驱动"
+    const help_text = "命令格式: /av IPX-641\n\nBy @永日之父\n由 Cloudflare Worker 强力驱动\n\n发送消息如果不回复就重新发送一次！！"
 
     if (body.message.sticker) {
       bot.sendText(MESSAGE.chat_id,help_text)
