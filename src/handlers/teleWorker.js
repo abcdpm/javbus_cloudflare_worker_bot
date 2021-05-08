@@ -19,7 +19,7 @@ export default async request => {
     const RETURN_FORBIDDEN = new Response('Oops...', {status: 403, statusText: 'Forbidden'})
     const RETURN_OK = new Response('working', {status: 200, headers: headers})
 
-    const bot = new Telegram(BOT_TOKEN, MESSAGE)
+    const bot = new Telegram('1747449645:AAGtjHNLrjySoYS8K8JyiJMVJSkylbhOiLg', MESSAGE)
 
     const help_text = "命令格式: /av KAWD-723\n\nBy @loliclub\n由 Cloudflare Worker 强力驱动"
 
