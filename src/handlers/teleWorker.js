@@ -62,7 +62,7 @@ export default async request => {
 
         if (resultList.length > 0) {
           for (let i = 0; i < resultList.length; i++) {
-            messageText += '\n------------\n名字: ' + decodeURIComponent(resultList[i].name) 
+            messageText += '\n-----------\n名字: ' + decodeURIComponent(resultList[i].name) 
             if (resultList[i].is_hd) {
               messageText += " [高清]"
             }
@@ -78,7 +78,7 @@ export default async request => {
           }
 
           if (!isPrivate && resultList.length > max) {
-            messageText += `\n------------\n在群聊中发车，还有 ${resultList.length - max} 个Magnet链接没有显示\n与 ${ROBOT_NAME} 机器人单聊可以显示所有链接`;
+            messageText += `\n-----------\n在群聊中发车，还有 ${resultList.length - max} 个Magnet链接没有显示\n与 ${ROBOT_NAME} 机器人单聊可以显示所有链接`;
           }
 
           bot.sendText(MESSAGE.chat_id, messageText)
