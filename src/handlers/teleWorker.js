@@ -69,6 +69,7 @@ export default async request => {
             if (resultList[i].has_subtitle) {
               messageText += " [字幕]"
             }
+            messageText += " " + resultList[i].size
             messageText += " " + resultList[i].releaseDate
             messageText += '\n链接: <code>' + resultList[i].magnet + '</code>'
             if ((i + 1) > max) {
